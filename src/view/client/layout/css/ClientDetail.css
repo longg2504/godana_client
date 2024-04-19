@@ -1,6 +1,6 @@
 @media (min-width:1279px) {
     .body-detail {
-        width: 60%;
+        width: 70%;
         /* height: 111px; */
         margin: 0 auto;
     }
@@ -24,8 +24,7 @@
 }
 
 .review {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .text {
@@ -45,7 +44,7 @@
 }
 
 .img0 {
-    width: 50%;
+    width: 30%;
 }
 
 .img0 img {
@@ -61,14 +60,15 @@
 }
 
 .imgs {
-    width: 50%;
+    width:750%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    margin-left: 207px;
 }
 
 .imgs img {
     width: 270px;
-    height: 272px;
+    height: 280px;
     padding: 5px 5px;
     cursor: pointer;
 }
@@ -79,8 +79,8 @@
 
 .btn-show-imgs {
     position: relative;
-    right: -229%;
-    top: -158%;
+    right: 0;
+    top: 0;
     border-radius: 15px;
     padding: 10px 10px;
     background: white;
@@ -209,7 +209,7 @@
 }
 
 .container-description-details {
-    max-height: 800px;
+    max-height: 600px;
     overflow: auto;
 }
 

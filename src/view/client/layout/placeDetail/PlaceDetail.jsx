@@ -9,7 +9,7 @@ const PlaceDetail = () => {
 
   return (
     <div>
-        <Header setLoading={setLoading}/>
+        <Header/>
         <BodyDetail/>
     </div>
   )

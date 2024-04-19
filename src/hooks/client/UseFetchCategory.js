@@ -5,6 +5,7 @@ const UseFetchCategory = () => {
     useEffect(() => {
         async function getCategories(){
             let cateRes = await CategoryService.getCategoryList();
+            console.log(cateRes.data, "cateRes")
             setCategories(cateRes.data)
         }
         getCategories();

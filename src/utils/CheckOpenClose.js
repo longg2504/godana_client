@@ -16,11 +16,12 @@ export default function checkOpenClose(startTime, endTime) {
     var currentTimeInMinutes = currentHour * 60 + currentMinute;
     var startTimeInMinutes = startHour * 60 + startMinute;
     var endTimeInMinutes = endHour * 60 + endMinute;
+    ;
 
     // Kiểm tra xem thời gian hiện tại có nằm trong khoảng cho phép hay không
     if (currentTimeInMinutes >= startTimeInMinutes && currentTimeInMinutes <= endTimeInMinutes) {
-        return `Đang mở cửa - Đóng cửa lúc: ${endTime}`;
+        return `Mở cửa - Đóng cửa lúc: ${endTime}`;
     } else {
-        return `Đang đóng cửa - Mở cửa lúc: ${startTime}`;
+        return `Đóng cửa - Mở cửa lúc: ${startTime}`;
     }
 }
