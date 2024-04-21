@@ -5,8 +5,8 @@ class PlaceService  {
     static getPlaceList() {
         return axios.get(API_URL_PLACE)
     }
-    static getPlaceListByCategoryAndSearch(categoryId,search) {
-        return axios.get(API_URL_PLACE + `?category=${categoryId}&search=${search}`)
+    static getPlaceListByCategoryAndSearch(categoryId,search,district,ward,address,rating) {
+        return axios.get(API_URL_PLACE + `?category=${categoryId}&search=${search}&districtName=${district}&wardName=${ward}&address=${address}&rating=${rating}`)
     }
     static getPlaceDetailById(placeId){
         return axios.get(API_URL_PLACE + `/${placeId}`)

@@ -139,6 +139,11 @@ body {
     text-align: right;
 }
 
+.review p {
+    float: left;
+    margin-left: 10px;
+}
+
 .listing p {
     margin: 5px 0;
     color: #777;

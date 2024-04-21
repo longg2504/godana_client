@@ -8,6 +8,10 @@ export const PlaceProvider = ({ children }) => {
     const [loadingSearchByPlace, setLoadingSearchByPlace] = useState(false)
     const [searchValue, setSearchValue] = useState("");
     const [categoryId, setCategoryId] = useState("");
+    const [rating, setRating] = useState("");
+    const [district, setDistrict] = useState("");
+    const [ward, setWard] = useState("");
+    const [address, setAddress] = useState("");
 
     return (
         <PlaceContext.Provider value={{ 
@@ -18,7 +22,16 @@ export const PlaceProvider = ({ children }) => {
             searchValue,
             setSearchValue,
             categoryId, 
-            setCategoryId, }}>
+            setCategoryId,
+            rating, 
+            setRating,
+            district, 
+            setDistrict,
+            ward, 
+            setWard,
+            address, 
+            setAddress
+             }}>
             {children}
         </PlaceContext.Provider>
     );
