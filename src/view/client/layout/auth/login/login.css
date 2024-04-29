@@ -72,3 +72,8 @@
     width: 100%;
     height: 120px;
 }
+.text-error{
+    display: block;
+    color: red;
+    font-size: 12px;
+}
